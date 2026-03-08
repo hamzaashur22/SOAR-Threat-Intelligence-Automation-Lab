@@ -228,7 +228,14 @@ The VM's network adapter was not configured for outbound internet access. The sc
 <img width="838" height="726" alt="image" src="https://github.com/user-attachments/assets/22ec49cf-d175-4168-a605-8c8679fad479" />
 
 **Windows hiding file extensions**
-Windows silently added `.txt` to the `.env` file making it `.env.txt`. The script couldn't locate the file until the extension was corrected via PowerShell rename. Lesson: always verify actual filenames with `dir -Force` to avoid a minor headache. 
+Windows silently added `.txt` to the `.env` file making it `.env.txt`. The script couldn't locate the file until the extension was corrected via PowerShell rename. Lesson: always verify actual filenames with `dir -Force` to avoid a minor headache.  
+
+**Run.log**
+
+A crucial part of the troubleshooting process and the lab as a whole. The script creates a file that audit and trails every action taken during the run. Every IOC processed every API call attempted, 
+every error caught, and confirmation that the output files were written, all timestamped in UTC. Without this file right here it would've been difficult trying to pinpoint and debug issues with my script.  
+
+<img width="1907" height="831" alt="image" src="https://github.com/user-attachments/assets/c2ebc09a-2ad3-42bf-9057-916c9c184ed6" />
 
 
 ---
