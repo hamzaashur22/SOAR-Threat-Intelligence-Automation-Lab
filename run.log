@@ -1,0 +1,18 @@
+[2026-03-08T04:57:59+00:00] Starting Soar intel run
+[2026-03-08T04:57:59+00:00] Error on google.com: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'www.virustotal.com\', port=443): Max retries exceeded with url: /api/v3/domains/google.com (Caused by NameResolutionError("HTTPSConnection(host=\'www.virustotal.com\', port=443): Failed to resolve \'www.virustotal.com\' ([Errno 11001] getaddrinfo failed)"))'))
+[2026-03-08T04:57:59+00:00] Error on 177.52.87.237: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'api.abuseipdb.com\', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=177.52.87.237&maxAgeInDays=90&verbose= (Caused by NameResolutionError("HTTPSConnection(host=\'api.abuseipdb.com\', port=443): Failed to resolve \'api.abuseipdb.com\' ([Errno 11001] getaddrinfo failed)"))'))
+[2026-03-08T04:57:59+00:00] Error on codeproofs[.]com: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'www.virustotal.com\', port=443): Max retries exceeded with url: /api/v3/domains/codeproofs%5B.%5Dcom (Caused by NameResolutionError("HTTPSConnection(host=\'www.virustotal.com\', port=443): Failed to resolve \'www.virustotal.com\' ([Errno 11001] getaddrinfo failed)"))'))
+[2026-03-08T04:57:59+00:00] Error on 172.184.139.225: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'api.abuseipdb.com\', port=443): Max retries exceeded with url: /api/v2/check?ipAddress=172.184.139.225&maxAgeInDays=90&verbose= (Caused by NameResolutionError("HTTPSConnection(host=\'api.abuseipdb.com\', port=443): Failed to resolve \'api.abuseipdb.com\' ([Errno 11001] getaddrinfo failed)"))'))
+[2026-03-08T04:57:59+00:00] Error on verify-lastpass[.]com: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'www.virustotal.com\', port=443): Max retries exceeded with url: /api/v3/domains/verify-lastpass%5B.%5Dcom (Caused by NameResolutionError("HTTPSConnection(host=\'www.virustotal.com\', port=443): Failed to resolve \'www.virustotal.com\' ([Errno 11001] getaddrinfo failed)"))'))
+[2026-03-08T04:57:59+00:00] wrote: Z:\SOAR_output\blocklist.csv
+[2026-03-08T04:57:59+00:00] Wrote: Z:\SOAR_output\intel_brief_20260308T045759Z.md
+[2026-03-08T04:57:59+00:00] completed SOAR Intel run
+[2026-03-08T05:23:10+00:00] Starting Soar intel run
+[2026-03-08T05:23:12+00:00] Added domain: google.com -> score=0 conf=LOW
+[2026-03-08T05:23:13+00:00] Added ip: 177.52.87.237 -> score=100 conf=HIGH
+[2026-03-08T05:23:13+00:00] Added domain: codeproofs[.]com -> score=90 conf=HIGH
+[2026-03-08T05:23:14+00:00] Added ip: 172.184.139.225 -> score=4 conf=LOW
+[2026-03-08T05:23:14+00:00] Added domain: verify-lastpass[.]com -> score=300 conf=HIGH
+[2026-03-08T05:23:14+00:00] wrote: \\vmware-host\Shared Folders\SOAR_output\blocklist.csv
+[2026-03-08T05:23:14+00:00] Wrote: \\vmware-host\Shared Folders\SOAR_output\intel_brief_20260308T052314Z.md
+[2026-03-08T05:23:14+00:00] completed SOAR Intel run
