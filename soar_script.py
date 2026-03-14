@@ -115,7 +115,6 @@ def log_line(log_path: Path, msg: str) -> None:
     log_path.write_text("", encoding="utf-8") if not log_path.exists() else None
     with log_path.open("a", encoding="utf-8") as f:
         f.write(f"[{now_utc_iso()}] {msg}\n")
-        # he f"   " is an f string and whatever is enclosed in the {} placeholders python  fills with real values like utc iso and msg
 
 def vt_headers(vt_key: str) -> Dict[str, str]:
     return {"x-apikey": vt_key, "User-Agent": USER_AGENT}
